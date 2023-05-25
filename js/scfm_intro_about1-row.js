@@ -55,7 +55,7 @@ function go_sub(){
     $('#start0').css({background:"transparent"});
     $('#start0').css({border:"1px solid #1b1b1b"});
     $('#start0').css({color:"#1b1b1b"});
-    $('.quest00').attr("onclick","jump_quest(8)");
+    $('.quest00').attr("onclick","jump_quest(7)");
     setTimeout(function() {$('.countercheck').counterUp({
 		delay: 10,
 		time: 1000

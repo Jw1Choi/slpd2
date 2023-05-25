@@ -3,6 +3,7 @@
 
 <head>
 
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -69,7 +70,7 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
   <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/css-java-168f0.appspot.com/o/model-intro.jpg?alt=media&token=7be95164-2cd0-44b1-98a2-55c1a9935f62">
-  <meta property="og:title" content="SLEEP & DIET 접속자 한정 이벤트">
+  <meta property="og:title" content="CUT & CUT 접속자 한정 이벤트">
   
 
 	<link rel="apple-touch-icon" sizes="16x16" href="img/diet-icon.png">
@@ -99,7 +100,6 @@
 	<script src="./test_set/js/fast.js"></script>
 	
 		
-		
 	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/kas/static/kp.js"></script>
 	<script type="text/javascript">
 		  kakaoPixel('2233734005074735774').pageView('landing_view');
@@ -120,7 +120,7 @@
 		
 	<template id="test_body"></template>
 	
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
   
 		window.addEventListener("keydown",function(e){
 		  if ( e.keyCode == 123 ) {
@@ -145,7 +145,7 @@
 		document.body.setAttribute('ondragstart', 'return false');
 		
 		
-		</script> -->
+		</script>
 
 
 
@@ -160,15 +160,65 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
 	<script src="./js/menu_sleep.js"></script>
-	<script src="./js/count1.js"></script>
 	<script src="./js/sleep_body_intro.js"></script>
 	<script src="./js/personal_f.js"></script>
-	<script src="./js/scfm_intro.js"></script>
+	<script src="./js/scfm_intro_about1.js"></script>
 	<script src="./js/slick_intro.js"></script>
-
+	<script src="./js/count1.js"></script>
 	<script src="js/main.js"></script>
 
-
+	<script src="./js/ValidCheck.js"></script>
+	<script language="JavaScript" type="text/JavaScript" charset="utf-8">
+		//<![CDATA[
+		var dbdb_submitted = false;
+		
+		function OnSubmit() {
+			if(dbdb_submitted == true) { return; }
+			
+			var f = document.inputForm;
+		
+			if ( VC_inValidText(f.name, "이름") ) return;
+		
+			if ( VC_isUnselectRadio(f.sex, "성별") ) return;
+			if ( VC_inValidFemale(f.sex, "", "") ) return;
+			
+			if ( VC_inValidText(f.age, "나이") ) return;
+			if ( VC_inValidNumber(f.age, "나이") ) return;
+			if ( VC_inValidAgeLimit(f.age, "", "") ) return;
+		
+			if ( VC_inValidText(f.tel1, "연락처") ) return;
+			if ( VC_inValidNumber(f.tel1, "연락처") ) return;
+			if ( VC_inValidText(f.tel2, "연락처") ) return;
+			if ( VC_inValidNumber(f.tel2, "연락처") ) return;
+			if ( VC_inValidText(f.tel3, "연락처") ) return;
+			if ( VC_inValidNumber(f.tel3, "연락처") ) return;
+			
+			if ( VC_inValidText(f.item1, "현재체중") ) return;
+			if ( VC_inValidNumber(f.item1, "현재체중") ) return;
+		
+			if ( VC_inValidText(f.item3, "감량목표") ) return;
+			if ( VC_inValidNumber(f.item3, "감량목표") ) return;
+			
+			if ( VC_inValidText(f.item2, "키") ) return;
+			if ( VC_inValidNumber(f.item2, "키") ) return;
+			
+			
+			if ( !f.agree[0].checked ) {
+				alert("개인정보 수집/이용, 취급/위탁에 동의해 주세요!   ");
+				return;
+			}
+		
+			f.auto_defense.value = "identicharddeep!";
+			
+			dbdb_submitted = true;
+			f.submit();
+		}
+		
+		function dbdb_pri_popup() {
+			window.open("m_personal.html", "", "scrollbars=yes,status=no,width=320 height=480 top=0 left=0"); 
+		}
+		//]]>
+		</script>
 	
 	<script type="text/javascript">var submitted=false;</script>
                     
