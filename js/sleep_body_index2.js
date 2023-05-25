@@ -1,6 +1,6 @@
 const testbody = document.getElementById('test_body');
 testbody.innerHTML = `
-<div id="wrap" >
+<div id="wrap" style="" >
 
 
 <section id="dbscf" style="display:none;">
@@ -162,66 +162,146 @@ testbody.innerHTML = `
 			  	<input type="hidden" name="entry.272078534" value="type2">
 					<div class="wow fadeIn bbackg"> 
 		
-							 <section  id="main_intro" class="backg" style="text-align: center;" >
+							 <section  id="main_intro" class="backg " style="text-align: center;" >
 							 					  
-								  <img src="./img/sleep1.jpg" class="bg-img br50" style="min-height:760px;max-height:800px">
+							 <img src="./img/sleep1.jpg" class="bg-img br50" style="min-height:1060px;max-height:1300px">
 								
-								  <div class="img-text md-top3 lg-top5 top-space" style="font-size:21px;">
-								  <center>  <span class="timer " style="border:1px solid white;padding:8px 15px;font-size:13px; ">
-								접수마감 | <span id="day1"></span>( <span id="countdown1"></span>)</center><br>
-								
-							
-								  <center><h1><span class="questm ft-white">SLEEP & DIET<br>NEW 수면 다이어트 프로그램<br>선착순 14차 무료 상담 혜택<br><br>점점 안빠져 고민이신가요?<br>자면서 살빼는 방법을 알려드립니다.<br></span></h1></center>
-	
-							
-							  <div class="row counters">
-								<div class="col-lg-4 col-4 text-center">
-								  <span class="counter">98</span><span > %</span>
-								  <p>감량만족도</p>
-								</div>
-					
-								<div class="col-lg-4 col-4 text-center">
-								  <span class="counter">156,198</span><span> 명</span>
-								  <p>누적고객</p>
-								</div>
-					
-								<div class="col-lg-4 col-4 text-center">
-								  <span>연속 </span><span class="counter">13</span><span >차</span>
-								  <p>조기 마감</p>
-								</div>
-					
-								<!-- <div class="col-lg-4 col-4 text-center">
-								  <span class="counter">5</span><span >년</span>
-								  <p>기업상담 재직 연수</p>
-								</div> -->
-							  </div>
-					
-							<center><p class="notice blink1">현재 페이지 한정</p></center>
-							<br>
+							 <div class="img-text md-top3 lg-top5 top-space" style="font-size:21px;">
+							 <center>  <span class="timer " style="border:1px solid white;padding:8px 15px;font-size:13px; ">
+						   접수마감 | <span id="day1"></span>( <span id="countdown1"></span>)</center><br>
 
-							
-						
-							  <center><input name="entry.intro" id="quest00_1" class="input_font quest00" type="radio" value="시작하기" style="text-align:center;" >
-							  <label class="label_button1 intro_click" id="start0" for="quest00_1" onclick="go_sub()"><span style="font-size: 16px;"></span><span >시작하기</span></label>
-							  
-							  
-							  <input class="agree" type="checkbox" name="agree11" id="agree11" value="개인정보동의" checked style="font-size:12px !important">
-							  <label class="agree" style="font-family: 'RIDIBATANG';font-size:12px !important;margin-top:0px" for="agree11">개인정보동의</label>
-							  
-							
-			  
-							<span class="privacyBtn" onclick="privacyPopUp()">
-							  [자세히보기]
-							</span>
-							<br>
-							<span class="alert"  id="alert_41">　</span>
-							  </center>
-																		  <!--원하는 영역을 가도록 수정법= 'onclick = jump_quest(원하는 영역 번호)'를 작성-->
-																		  <!--버튼 글자 수정 = '시작하기 >>' 부분을 원하는대로 수정해주시면 됩니다.-->
-							  </div>
 
-	
-							  </section>
+					   
+							 <center><h1><span class="questm ft-white">SLEEP & DIET<br>NEW 수면 다이어트 프로그램<br>선착순 14차 무료 상담 혜택<br><br>점점 안빠져 고민이신가요?<br>자면서 살빼는 방법을 알려드립니다.<br></span></h1></center>
+
+					   
+						 <div class="row counters">
+						   <div class="col-lg-4 col-4 text-center">
+							 <span class="counter">98</span><span > %</span>
+							 <p>감량만족도</p>
+						   </div>
+			   
+						   <div class="col-lg-4 col-4 text-center">
+							 <span class="counter">156,198</span><span> 명</span>
+							 <p>누적고객</p>
+						   </div>
+			   
+						   <div class="col-lg-4 col-4 text-center">
+							 <span>연속 </span><span class="counter">13</span><span >차</span>
+							 <p>조기 마감</p>
+						   </div>
+			   
+						   <!-- <div class="col-lg-4 col-4 text-center">
+							 <span class="counter">5</span><span >년</span>
+							 <p>기업상담 재직 연수</p>
+						   </div> -->
+						 </div>
+			   
+					   <center><p class="notice blink1">현재 페이지 한정</p></center>
+					   <br>
+
+					   
+				   
+						 <center><input name="entry.intro" id="quest00_1" class="input_font quest00" type="radio" value="시작하기" style="text-align:center;" >
+						 <label class="label_button1 intro_click" id="start0" for="quest00_1" onclick="go_sub()"><span style="font-size: 16px;"></span><span >시작하기</span></label>
+						 
+						 
+						 <input class="agree" type="checkbox" name="agree11" id="agree11" value="개인정보동의" checked style="font-size:12px !important">
+						 <label class="agree" style="font-family: 'RIDIBATANG';font-size:12px !important;margin-top:0px" for="agree11">개인정보동의</label>
+						 
+					   
+		 
+					   <span class="privacyBtn" onclick="privacyPopUp()">
+						 [자세히보기]
+					   </span>
+					   <br>
+					   <span class="alert"  id="alert_41">　</span>
+						 </center>
+																	 <!--원하는 영역을 가도록 수정법= 'onclick = jump_quest(원하는 영역 번호)'를 작성-->
+							   
+							   
+					   
+																	 <div class="wrap linkWrap" style="display:inline">
+																	 <div class="sec00 contents" >
+																	   <div class="inner" style="text-align:-webkit-center;">
+																	   <p>
+																		 <span id="day"></span><br>
+																		 현재 <span  class="counter" style="bottom:1px;">142</span> 명이 신청 대기 중입니다.
+																		 
+																	   </p>
+														 
+															  
+														 
+																	   <div class="box_02">
+																		 <div class="box_02_1">
+																		   <div style="position:relative;height:150px;overflow:hidden;">
+																			 <div id="ticker_wrap" style="position: absolute;top:0px;right:0px;width:100%;">
+																			   <table id="ticker" class="tg">
+																			   <tbody>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">배</span></td>
+																				   <td class="tg-02ax">35세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">배</span></td>
+																				   <td class="tg-02ax">50세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">옆구리</span></td>
+																				   <td class="tg-02ax">26세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">허벅지</span></td>
+																				   <td class="tg-02ax">25세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">배</span></td>
+																				   <td class="tg-02ax">42세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">등</span></td>
+																				   <td class="tg-02ax">31세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">허벅지</span></td>
+																				   <td class="tg-02ax">49세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">종아리</span></td>
+																				   <td class="tg-02ax">38세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																				 <tr>
+																				   <td class="tg-0lax"><span class="submit_02">배</span></td>
+																				   <td class="tg-02ax">27세 / 여성</td>
+																				   <td class="tg-03ax"><span class="submit_03">신청완료</span></td>
+																				 </tr>
+																			   </tbody>
+																			   </table>
+																			   
+																			 </div>
+																		   </div>
+																		 </div>
+																	   </div>
+																	   </div>
+																	 </div>
+																   </div>		
+							   
+																	 <!--버튼 글자 수정 = '시작하기 >>' 부분을 원하는대로 수정해주시면 됩니다.-->
+						 </div>
+
+
+
+
+						 
+						 </section>
 
 						  <!--메인 화면 SECTION-->
 
@@ -712,13 +792,119 @@ testbody.innerHTML = `
 
 						 <section  id="quest100_wrap" class="wow fadeIn backg container1" >
 						  
-						 <img src="./img/mirror.jpg" class="bg-img br50" style="min-height:660px;max-height:800px">
+						 <img src="./img/mirror.jpg" class="bg-img br50" style="min-height:1460px;max-height:1300px">
    
 						 <div class="wow fadeIn img-text ft-white">	
 				
 						 <center><h1 style="line-height:90%"><span class="questm ft-white">수면 다이어트<br>무료 체형 분석<br>상담 신청이 완료 되었습니다.<br><br>실질적인 도움과 안내를 위하여<br>전화를 통해 안내를 드리고 있습니다.<br>다만 부재시 감량을 도와드리지 못하니<br>꼭 전화를 받아주세요.<br><br>오로지 여러분의<br>건강한 감량만을 생각합니다.<br>-수면 다이어트-</span></h1></center>
 
-							
+						 <center><h1 style="line-height:1.0;padding-bottom:0px;"><span class="questm ft-white">올바른 수면을 통해<br>자면서 감량할 수 있도록 도와드리는<br>SLEEP & DIET 입니다.<br></span></h1></center>
+
+					  <section id="clients" class="wow fadeInUp">
+					  <hr style="background-color:#fff;width:90%;margin-bottom:35px">
+					  <div class="container">
+
+				
+							<div class="owl-carousel clients-carousel">
+
+
+						<!-- flat slide -->
+						<!--	<div>  
+									
+										
+											<div class="row ">
+												<div class="col-lg-4 col-4 text-center">
+												<center><img class="img_slide" src="img/sleep.jpg" alt="" ></center>
+												</div>
+									
+												<div class="col-lg-8 col-8 text-center">
+												
+												<p class="txt-tip">수면 중에는 체지방 분해와 단백질 합성에<br>가장 중요한 성장 호르몬을 분비합니다.</p>	
+												</div>
+		
+											</div>
+									</div> -->
+
+						<!-- end flat slide -->		
+
+
+									<div>  
+									<p class="txt-tip">1) 살이 점점 안빠지고<br>체중이 늘기만 하는 이유?</p>	
+										<center><img class="img_slide" src="img/ft.jpg" alt="" ></center>
+										<p class="txt-tip">체지방을 없애고 근육을 만드는 핵심인<br>성장호르몬이 20대 이후 감소하면서<br>나잇살이 생기고 안빠지는 체질이 됩니다.<br>[출처: 서울대학교 병원]</p>	
+											<!-- <div class="row ">
+												<div class="col-lg-4 col-4 text-center">
+												<p class="txt-tip">체지방 분해<br>근육을 만드는<br>성장호르몬의 감소<br></p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+												<p class="txt-tip"></p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+												<center><img src="./img/gmp-ffood.png" class="gmp" style="padding:0 0"></center>
+												<p class="txt-tip">체지방 </p>
+												</div>
+									
+										
+											</div> -->
+									</div>
+
+									<div>  
+									<p class="txt-tip">2) 성장호르몬 분비를 다시 촉진시켜<br>감량에 도움되게 하는 가장 좋은 방법은 수면입니다.</p>	
+										<center><img class="img_slide" src="img/sleep.jpg" alt="" ></center><br>
+											<div class="row ">
+												<div class="col-lg-4 col-4 text-center">
+											
+												<p class="txt-tip">1. 좋은 수면<br>(하루 성장호르몬의 60~70% 분비)</p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+											
+												<p class="txt-tip">2. 규칙적 운동<br>(운동시 분비 촉진)</p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+												<p class="txt-tip">3. 균형잡힌 식단<br>(혈당 낮을 때 분비)</p>
+												</div>
+									
+										
+											</div>
+									</div>
+
+									<div>  
+									<p class="txt-tip">3) 수면의 장점을 활용해<br>올바른 감량을 진행할 수 있다면?</p>	
+									<center><img class="img_slide" src="img/sleep.jpg" alt="" ></center><br><br>
+											<p class="txt-tip">SLEEP & DIET 수면 프로그램은<br>이 질문에 대한 긴 고민과 연구 끝에 태어났습니다.</p>	
+									</div> 
+
+									<div>  
+									<p class="txt-tip">4) 식약처 인증된 안전한 성분을 함께 활용해<br>체계적이고 효과적인 감량을 도와드립니다.</p>	
+										<center><img class="img_slide" src="img/sleep_product.png" alt="" ></center>
+											<div class="row ">
+												<div class="col-lg-4 col-4 text-center">
+												<span >500</span><span class="txt-tip">mg</span>
+												<p class="txt-tip">감태추출물<br>(수면 개선에 도움 줄 수 있음)</p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+												<span>500</span><span class="txt-tip">mg</span>
+												<p class="txt-tip">콜레우스포스콜리추출물<br>(체지방 감소 도움 줄 수 있음)</p>
+												</div>
+									
+												<div class="col-lg-4 col-4 text-center">
+												<center><img src="./img/gmp-ffood.png" class="gmp" style="padding:0 0"></center>
+												<p class="txt-tip">식약처 기능성 인증</p>
+												</div>
+									
+										
+											</div>
+									</div>
+							</div>
+							<hr style="background-color:#fff;width:90%">
+					  </div>
+	
+					</section>	
 						 
 						 </div>
    

@@ -28,7 +28,7 @@ $(function() {
       
     //   document.getElementById("countdown").innerHTML = hours + "시 " + minutes + "분 " + seconds + "초 남음 ";
       document.getElementById("countdown1").innerHTML = hours + "시 " + minutes + "분 " + seconds + "초 남음 ";
-      // document.getElementById("day").innerHTML = year + ". " + month + ". " + day;
+      document.getElementById("day").innerHTML = year + "년 " + month + "월 " + day+ "일 기준";
       document.getElementById("day1").innerHTML = year + ". " + month + ". " + day + " ";
       // If the countdown is finished, start a new countdown for the next midnight
       if (distance < 0) {
